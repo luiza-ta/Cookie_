@@ -1,0 +1,119 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #4a2e14;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #f5e6da;
+  border-bottom: 2px solid #dcbf9e;
+}
+
+.logo {
+  height: 60px;
+}
+
+/* Hero Section */
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #d2691e;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a0522d;
+}
+
+.recipe-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10%;
+  background-color: #fcebd2;
+  flex-wrap: wrap;
+}
+
+.recipe-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sub {
+  font-size: 1rem;
+  color: #7b4a2c;
+  margin-bottom: 1rem;
+}
+
+.hero-cookie {
+  max-height: 200px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Recipe Section */
+.recipe {
+  padding: 3rem 10%;
+  background-color: white;
+}
+
+.recipe h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: #8b4513;
+}
+
+.recipe ul, .recipe ol {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.recipe li {
+  margin-bottom: 0.75rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f5e6da;
+  border-top: 2px solid #dcbf9e;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recipe-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-cookie {
+    margin: 0 auto 1rem;
+  }
+}
